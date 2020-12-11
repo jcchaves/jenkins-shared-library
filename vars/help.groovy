@@ -1,6 +1,10 @@
 import me.juliochaves.Help
 
-def showHelp(steps) {
-  def help = new Help(steps)
-  help.show()
+def call(Map config) {
+  node {
+    stages('Build') {
+      def help = new Help(steps)
+      help.show()
+    }
+  }
 }
