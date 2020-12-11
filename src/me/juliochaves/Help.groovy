@@ -1,7 +1,11 @@
 package me.juliochaves;
 
 class Help {
+  def steps
+  Help(steps) {
+    this.steps = steps
+  }
   def show() {
-    echo "How to use me?"
+    steps.echo "How to use me?"
   }
 }
