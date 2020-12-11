@@ -2,7 +2,7 @@ import me.juliochaves.Help
 
 def call(Map config) {
   node {
-    stages('Build') {
+    stage('Build') {
       def help = new Help(this)
       help.show()
     }
