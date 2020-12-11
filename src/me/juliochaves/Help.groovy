@@ -5,7 +5,7 @@ class Help {
   Help(steps) {
     this.steps = steps
   }
-  def show() {
-    steps.echo "How to use me?"
+  def show(String name = "World") {
+    steps.echo "Hello ${name}!!!"
   }
 }
